@@ -1,0 +1,196 @@
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .about-grid,
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-content,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .stats-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-grid {
+        justify-content: center;
+    }
+
+    .about-grid {
+        text-align: center;
+    }
+
+    .avatar-wrap {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-desc {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #cursor-dot,
+    #cursor-ring {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    nav {
+        padding: 15px 5vw;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: rgba(2, 0, 8, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 35px 0;
+        transition: .4s;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.open {
+        left: 0;
+        display: flex;
+    }
+
+    .hero-name {
+        font-size: clamp(2.2rem, 11vw, 4rem);
+        line-height: 1.2;
+    }
+
+    .hero-role {
+        font-size: .72rem;
+        letter-spacing: 2px;
+        line-height: 1.8;
+    }
+
+    .hero-desc {
+        font-size: .9rem;
+        line-height: 1.8;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .projects-grid,
+    .blogs-grid,
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .blog-card {
+        width: 100%;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-grid {
+        justify-content: center;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    section {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .hero-role {
+        font-size: .65rem;
+    }
+
+    .hero-desc {
+        font-size: .85rem;
+    }
+
+    .avatar-wrap {
+        width: 180px;
+        height: 180px;
+    }
+
+    .stats-row {
+        gap: 18px;
+    }
+
+    .stat-num {
+        font-size: 1.5rem;
+    }
+
+    .project-card,
+    .blog-body {
+        padding: 20px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+    .social-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
